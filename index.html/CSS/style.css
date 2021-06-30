@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* CSS Document */
+#nav li{float: left;margin-right:180px;width: 90px;text-align: center;}/*导航水平排列*/
+			ul{text-align:center;padding: 0;margin: 0;display: block;}
+		a{text-decoration-line: none;font-family: 宋体;font-size: 21px;color: black!important}/*去掉系统默认下划线、导航颜色、字体样式*/
+			li{display: inline-block;list-style: none;margin-right: 25px;margin-top:8px;
+				margin-bottom:15px;list-style-type:none;/*消除导航前带的点*/}
+			li a:hover{background-color: #9DA2AD;border-radius: 12px;}/*鼠标划过变颜色*/
+			.a ul li ul{display: none;/*将二级菜单隐藏起来*/}
+			.a ul li:hover ul{display: block;}/*当鼠标移动到一级标签后，ul即二级菜单显示出来*/
+			.box{width:100%;height: 42px;background-color: #6E7376;}/*字母背景框*//*首页导航*/
+.sideBar{position:fixed;
+    top:280px;
+    right:10px;z-index:100;background-color:#9DA2AD;border-radius: 12px;width: 110px;opacity: 0.7;
+	color: white;
+  text-shadow: 3px 3px 4px #FFFFFF;
+		}/*侧栏设定*/
+
+#d1{
+background: url("../img/img2.jpg");
+width: 100%;
+height: auto;
+text-align: center;
+	color : #D7D0D0;}
+#d2{
+background: url("../img/img1.jpg");
+width: 100%; 
+height:auto;
+text-align: center ;
+	color : #D7D0D0;}
+#d3{
+background: url("../img/img3.jpg");
+width: 100%;
+height: auto;
+text-align: center ;
+	color : #D7D0D0;}
+#d1, #d2, #d3{
+position: relative;
+background-attachment: fixed;
+}/*滚动时差设定*/
+
+#d4{
+background: url("../img/img4.jpg");
+width: 100%;
+height: auto;
+text-align: center;
+	color : #D7D0D0;}
+#d5{
+background: url("../img/img5.jpg");
+width: 100%; 
+height: auto;
+text-align: center ;
+	color : #D7D0D0;}
+#d6{
+background: url("../img/img9.jpg");
+width: 100%;
+height: auto;
+text-align: center ;
+	color : #D7D0D0;}
+#d4, #d5, #d6{
+position: relative;
+background-attachment: fixed;
+}/*滚动时差设定*/
+
+.tab {
+	padding: 5px;
+	width: 100%;
+	border-bottom: 5px solid #7B95A6;}/*下划线设置*/
+.tab ul {
+	margin:0;
+	margin-right: 10px;
+	padding: 0;
+	list-style: none;
+	margin-left:150px;
+}
+.tab li {
+	display: inline;
+	margin: 0px 2px 0px 0px;
+	padding: 0;
+	text-transform:uppercase;
+}
+.tab a {
+	float: left;
+	display: block;
+	font: bold 14px 宋体;
+	color: white;
+	text-decoration: none;
+	margin: 0 1px 0 0px;
+	padding: 10px 10px 5px 10px;
+	background-color: #6E737A;
+	border-top: 0px solid white;
+	margin-left:110px;
+	}
+	#case{float:left;margin-left:120px;margin-top: 4px;width:500px;height:460px;border:2px;background: #9DA2AD;border-radius: 12px;}/*内部小框架*/
+	/*.case text{float:left;border:2px;width:200px;height:200px;display:inline}*/
+	.introduction{float:right;width:1400px;height:500px;}/*相关介绍的大框*/
+	.picture{float: right;margin-top: 90px;margin-right:130px;border-radius: 12px;}/*对老人图片的设定*/
+.text_1{font-family: YouYuan;line-height: 1;text-align: left;font-size: 24px;}
+/*第一部分设定*/
+.container{width: 100%;background-color: #16171A;
+		   background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+		   overflow: hidden;}
+/*大容器样式*/
+
+/*各个部分容器样式*/
+/*菜单样式*/
+.partOne{width: 100%;height: 720px;background-color: #5E5F63;
+         background-image: url("https://www.transparenttextures.com/patterns/buried.png");}
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/*现状样式*/
+.partTwo{width: 100%; background-color: #5B5C5F;
+ 		 background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");}
+/*空巢老人原因样式*/
+.partThree{width: 100%; background-color: #5E5F61;
+ 		   background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");}
+/*老龄化原因样式*/
+.partFour{width: 100%; background-color: #5B5C5F;
+ 		  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");}
+/*工作建议样式*/
+.partFive{width: 100%; background-color: #5E5F61;
+ 		  background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");}
+/*页脚样式*/
+.partSix{width: 100%;height: 726px;background-color: #5E5F63;
+         background-image: url("../img/img_33.png");
+		 padding-bottom: 0px; margin-bottom: 0px; margin-top: 30px;}
+
+
+/*菜单大框架各部分样式如下*/
+.menu{width: 1460px; height: 140px; margin-top: 90px; margin-left: 50px;}
+.menuImg{width: 70px;height: 260px;margin-right: 20px;overflow: hidden;float: left;transition: all 1s;
+		 position: relative; display: inline-block;}
+.menuImg:hover img{transform: translateX(-650px);filter: drop-shadow(#66ccff 0 650px); opacity: 0.9;}
+.menuImg:hover{transform: scale(0.95);}
+.menuP{display: none; position: absolute; color: #FFFFFF; word-spacing: 7px; letter-spacing: 7px; z-index: 900;
+	   font-weight: bold;}
+.menuImg:hover .menuP{display: block; text-align: center; padding-left: 25px; padding-top: 70px; 
+					  transform: scale(1.2);}
+
+
+/*分页各部分样式如下*/
+.page{width: 100%;height: 420px;padding-top: 10px;padding-bottom: 10px;}
+/*左图右文样式*/
+.pageLeft_1{width: 38.46%; height: 400px; float: left;}
+.pageRight_1{width: 57.69%; height: 400px; float: right;}
+/*左文右图样式*/
+.pageLeft_2{width: 53.33%; height: 400px; float: left;}
+.pageRight_2{width: 46.67%; height: 400px; float: right;}
+
+
+/*左图*/
+/*图片样式*/
+.pageImg_1{width: 740px;height: 370px;padding-left: 0px; padding-right: 100px; overflow: hidden;
+		   transition: all 1s;position: relative; display: inline-block;}
+/*鼠标滑过时图片样式*/
+.pageImg_1:hover img{width: 100%; transform: translateX(-700px); transform: translateY(-20px); opacity: 0.8;
+			         overflow: hidden; filter: drop-shadow(#66ccff 0 300px);-webkit-filter: grayscale(100%); 
+				     -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%);}
+/*鼠标滑过时变化样式*/
+.pageImg_1:hover{transform: scale(1.1); cursor:pointer;}
+/*图片上的文字样式*/
+.pageP_1{display: none; position: absolute; color: #FFFFFF; word-spacing: 7px; letter-spacing: 7px; z-index: 900;}
+/*鼠标滑过时文字样式*/
+.pageImg_1:hover .pageP_1{display: block; text-align: center; padding-left: 200px; padding-top: 120px; 
+					  transform: scale(1.2);}
+
+/*右图*/
+.pageImg_2{width: 740px;height: 370px; padding-right: 150px; overflow: hidden;
+		   transition: all 1s;position: relative; display: inline-block;}
+.pageImg_2:hover img{width: 100%; transform: translateX(-300px); transform: translateY(20px); opacity: 0.8;
+			         overflow: hidden; filter: drop-shadow(#66ccff 0 -300px);-webkit-filter: grayscale(100%); 
+				     -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%);}
+.pageImg_2:hover{transform: scale(1.1); cursor:pointer; overflow: hidden;}
+.pageP_2{display: none; position: absolute; color: #FFFFFF; word-spacing: 7px; letter-spacing: 7px; 
+		 z-index: 900;overflow: hidden;}
+.pageImg_2:hover .pageP_2{display: block; text-align: center; padding-top: 120px; padding-left: 170px;
+					  transform: scale(1.2); overflow: hidden;}
+/*.pageImg a, .pageImg span{display:none; text-decoration:none;}*/
+/*.pageImg:hover a.now{cursor:pointer; position:absolute;}*/
+/*.pageImg:hover span{display:block;position:absolute;color: #A6ABBD;text-align: center;opacity: 1;}*/
+
+
+/*右文*/
+/*标题样式*/
+.pageRight_1 span{padding-left: 20px; color: #A6ABBD; font-weight: bold; font-size: 18px;}
+/*文案样式*/
+.pageRight_1 p{padding-left: 100px; padding-right: 100px; margin-top: 30px; text-align: justify; text-indent: 2em; 
+			   word-spacing: 5px; letter-spacing: 5px; color: #B8B8B8; font-size: 16px;}
+/*左文*/
+.pageLeft_2 span{padding-left: 30px; color: #A6ABBD; font-weight: bold; font-size: 17px;}
+.pageLeft_2 p{padding-left: 100px; padding-right: 100px; margin-top: 30px; text-align: justify; text-indent: 2em; 
+			   word-spacing: 5px; letter-spacing: 5px; color: #B8B8B8; font-size: 16px;}
+
+
+/*页脚各部分样式如下*/
+/*图片样式*/
+.footerImg{width: 100%; height: auto; 
+		   padding-bottom: 0px; margin-bottom: 0px; position: relative;}
+/*中文样式*/
+.footerP{float: left;}
+.footerDiv{width: 100%; height: 40px;margin-left: 522px; padding-left: 100px;}
+/*英文样式*/
+.footerP_1{width: 100%; height: 40px; text-align: center; margin-top: 30px;}
+
+
+/*主体部分标题、图片、链接样式如下*/
+main h1{font-family: YouYuan;font-size: 38px; color: #A6ABBD;  margin-left: 50px;padding-top: 60px;}
+main h3{font-family: YouYuan;font-size: 32px; color: #A6ABBD;margin-left: 50px;padding-top: 40px;}
+main h5{font-family: YouYuan;font-size: 26px; color: #A6ABBD;margin-left: 50px;padding-top: 20px;}
+footer img{width: 100%; padding-bottom: 0px; margin-bottom: 0px;}
+footer p{font-family: YouYuan;font-size: 16px; color: #16171A;}
+a:link{color: #747578;}
+body{behavior:url("csshover.htc");}
+
+.container{width: 100%;background-color: #16171A;
+		   background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+		   /*overflow: hidden;*/}
+main h1{font-family: YouYuan;font-size: 36px; color: #A6ABBD;margin-left: 50px;padding-top: 60px;}/*大标题样式*/
+main h3{font-family: YouYuan;font-size: 30px; color: #A6ABBD;margin-left: 50px;padding-top: 40px;}/*小标题样式*/
+main h5{font-family: YouYuan;font-size: 22px; color: #A6ABBD;padding-top: 20px;}
+.underline{text-decoration:underline; color:#F5DF4D;}
+.partOne{width: 100%; background-color: #5B5C5F;
+ 		 background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");}/*大标题背景*/
+.partTwo{width: 100%; background-color: #5B5C5F;
+ 		 background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");}
+.page{width: 100%;background-color: #424656;background-color: #747578;
+ 			background-image: url("https://www.transparenttextures.com/patterns/buried.png");}/*小标题背景*/
+.leftText{width: 57.69%; height: 400px; float: right;color: white;margin-top: 70px}
+.pictuer_One{width: 500px;height: 300px; float:right;overflow:auto;padding-bottom: 60px;margin-right: 88px;margin-top: 0px}
+.img-1{width: 740px;height: 370px;padding-left: 20px; float: left
+		   ; display: inline-block;}
+.img-2{width: 740px;height: 500px;margin-left: 20px; float: left
+		   ; display: inline-block;padding-top: 30px}
+
+.special p{padding-left: 0px; padding-right: 0px; margin-top: 30px; text-align:justify; text-indent: 2em; 
+			   word-spacing: 5px; letter-spacing: 5px; color: #B8B8B8; font-size: 16px;margin-left: 150px}
+.img-tip{width:100%;margin-right: 100px;color:white;opacity:0.6;display: none}
+.img-group {position: relative;  display: inline-block;}   
+.img-group:hover .img-tip{display: block}
+td p{margin: 0px; width: 420px;padding: 0px;}
+td{width: 760px; padding: 0px; margin: 0px;}
+/*第二部分*/

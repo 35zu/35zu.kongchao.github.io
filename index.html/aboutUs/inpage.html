@@ -1,0 +1,997 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>空巢老人网页</title>
+		<link rel="stylesheet" href="../CSS/style.css" />
+	</head>
+
+	<body>
+		<div class="sideBar">
+			<a href="../index.html"><br>&nbsp;进入页&nbsp;</a><br><br>
+			 <a href="#shouye">&nbsp;&nbsp;首页</a><br><br>
+			 <a href="#yinru">&nbsp;案例引入</a><br><br>
+			 <a href="#gaikuang">&nbsp;总体概况</a><br><br>
+			 <a href="#tanjiu">&nbsp;原因探究</a><br><br>
+			<a href="#fansi">&nbsp;&nbsp;反思</a><br>
+		</div>
+		<div class="box">
+			<header class="a" id="nav">
+					<ul>
+						<li>
+							<a href="#shouye">首页</a>
+						</li>
+					</ul><!--首页链接-->
+					<ul>
+						<li>
+							<a href="#yinru">案例引入</a>
+						</li>
+					</ul><!--第一个大点完-->
+					<ul>
+						<li>
+							<a href="#gaikuang">总体概况</a>
+							<ul>
+								<li><a href="#qingkuang">老龄化情况</a></li>
+								<li><a href="#bianhua">数量变化</a></li>
+								<li><a href="#zhanbi">年龄占比变化</a></li>
+							</ul>
+						</li>
+					</ul><!--第二个大点完-->
+					<ul>
+						<li>
+							<a href="#tanjiu">原因探究</a>
+							<ul>
+								<li><a href="#xianzhuang">空巢老人现状</a></li>
+								<li><a href="#yuanyin">空巢老人原因</a></li>
+								<li><a href="#laolinghua">人口老龄化</a></li>
+							</ul>
+						</li>
+					</ul><!--第三个大点完-->
+					<ul>
+						<li>
+							<a href="#fansi">反思</a>
+							<ul>
+								<li><a href="#jianyi">工作建议</a></li>
+							</ul>
+						</li>
+					</ul><!--第四个大点完-->
+			</header>
+		</div>
+		<p id="shouye">
+			<img src="../img/picture.jpg" width="1470" height="1020" alt="封面首页图"/>
+		</p>
+		<div id="colee_left" style="overflow:hidden;width:1550px; width: 100%;">
+			<table>
+			<tr><td id="colee_left1">
+			<table>
+				<tr>
+				<td><p><img src="../img/one.jpg" alt="老人图片"></p></td>
+				<td><p><img src="../img/two.jpg" alt="老人图片"></p></td>
+				<td><p><img src="../img/three.jpg" alt="老人图片"></p></td>
+				<td><p><img src="../img/four.jpg" alt="老人图片"></p></td>
+				<td><p><img src="../img/five.jpg" alt="老人图片"></p></td>
+				</tr>
+			</table>
+			</td>
+			<td id="colee_left2"></td>
+			</tr>
+			</table>
+	</div>
+		<script>
+			
+			var speed=20<!--数值越大速度越慢-->
+			var colee_left2=document.getElementById("colee_left2");
+			var colee_left1=document.getElementById("colee_left1");
+			var colee_left=document.getElementById("colee_left");
+			colee_left2.innerHTML=colee_left1.innerHTML
+			function Marquee3(){
+			if(colee_left2.offsetWidth-colee_left.scrollLeft<=0)//offsetWidth 是对象的可见宽度
+			colee_left.scrollLeft-=colee_left1.offsetWidth//scrollWidth 是对象的实际内容的宽，不包边线宽度
+			else{
+			colee_left.scrollLeft++
+			}
+			}
+			var MyMar3=setInterval(Marquee3,speed)
+			colee_left.onmouseover=function() {clearInterval(MyMar3)}
+			colee_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
+			</script><!--图片滚动设计--><!--首页的相关设定-->
+		
+		<div id="d1">
+				<h1 id="yinru">案例引入</h1>
+				<div class="container">
+					<div class="introduction">
+						<div class="picture"><img src="../img/img8.jpeg" alt="老人图片"></div>
+						<div>
+							<ul class="tab">
+							<li><a onclick="document.getElementById('text1').style.display='block';
+								document.getElementById('text2').style.display='none'">故事背景1</a></li>
+							<li><a onclick="document.getElementById('text2').style.display='block';
+								document.getElementById('text1').style.display='none'">故事背景2</a></li>
+							</ul>
+						</div>
+						<div id="case">
+						<div id="text1" style="float: left;text-indent: 50px;font-size:16px; letter-spacing: 0.5px;line-height:1.2;text-align: left;font-family: YouYuan;display:inline;overflow: hidden">
+							<b class="text_1">&nbsp;<br>来自68岁退休独居女人的自述：</b><br><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我呢，今年已经68岁了，老伴前几年去了世，直到现在，我想起他我的心还隐隐作痛。以前啊，老伴拍着我的肩膀说：“我以后要陪你老去，第一个先走的肯定是你，我可不想留你在这冷漠的人世间独自为我难过、伤心呢。”我当时还笑他，说：“除了娶我，你给我的承诺什么时候有真过，恐怕你在说话之前自己加了双引号，导致承诺掺水了。”当时老伴恼羞成怒。<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在回想起他的话，也多多少少有些恨他，把我一个人扔下，自己就走了。可是呢，每当想起他的话的时候，我却觉得他的话有另外一层意思，就是生死没能掌握在自己手里，如果其中一方走了，另一方一定要好好活着，来到这人世间不容易，不要辜负这短短的一生。<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果靠退休金生活的时候，也帮不了自己多大的用处，退休金也就3000块钱，一个月的伙食费都要了，老了，得吃好点，不能一直对自己苛刻，加上看病的费用也是一份昂贵的开销，如果有留下来的钱就存着，到以后真的走不动了，自己就住进养老院，儿女知道我有退休金，也没有给过我生活费了，我也没有问过他们，毕竟他们都有自己的家庭等着开销，所以，晚年能让我依靠的不是儿女和退休金，而是自己。</div>
+						<div id="text2" style="float: left;text-indent: 2em;font-size:16px; letter-spacing: 0.5px;line-height: 1.2;text-align: left;font-family: YouYuan;display:inline;overflow: hidden">
+					<b class="text_1">&nbsp;<br>一个老人一个家</b><br><br>
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“以前身体好，不觉得有啥；现在年纪大了，一身的毛病，真怕哪一天死在屋里都没人知道。”已经79岁的张女士正在厨房淘米，记者看到她动作有些迟缓，眼神不济。张女士的女儿在外地工作，儿子一家在市区南边居住，距离较远。自老伴于2010年去世后，张女士就开始了独居生活。记者问她，最怕什么？张女士说，怕孤独。现在很多时候她都是待在家里，要么一个人发呆，要么看电视。“我最多扶着个凳子挪到单元门口，看看来来往往的人。”张女士苦笑着告诉记者。<br><br>
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张女士说，现在基本是一个老人一个家。早些年大家身体相对硬朗时，都会出来聊聊天、参加一些公益活动。但最近这几年，老姐妹们离世的离世、重病的重病，能出来唠家常的越来越少。“女儿在深圳，一直想让我过去，可人老了就不想挪窝了。儿子虽然在身边，可每天很忙，每周抽空给我买两次菜。现在我有点害怕，怕哪一天死了都没人知道。”前几年，张女士听说一位空巢老人死在家里好几天才被子女发现。有段时间，她和邻居、朋友都在讨论这个事。<br><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“白天能出门就出门，有时候腿疼得实在挪不动，也只能待在家里。家里一天到晚开着电视，这样不至于太安静。”说这话时，张女士话语里充满了无奈。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			<div id="d2">
+			<h1 id="gaikuang">总体概况</h1>
+				<div class="container">
+		<main>
+		<h1>现状</h1>
+		<table><tbody>
+				<tr>
+					<td>
+				<p class="leftText">我国进入老龄化社会以来,呈现出老年人口基数大、增速快、高龄化、失能化、空巢化趋势明显的态势,再加上我国未富先老的国情和家庭小型化的结构叠加在一起,养老问题异常严峻。
+					</p></td><!--左边概述-->
+					<td>
+				<div class="pictuer_One">				
+					<img src="../img/imgOne.jpg" width="500" alt="老人图片">
+					<img src="../img/imgTwo.jpg" width="500" alt="老人图片">
+			</div></td><!--概述示图-->
+				</tr></tbody>
+		</table>
+			<div class="partTwo">
+			<h3 id="qingkuang">老龄化情况</h3>
+		<table>
+		  <tr><td>
+			<div class="img-group">
+			<div class="img-tip"><h5>1950年至2050年中国人口特征变化</h5></div>
+			<div class="img-1">	
+			<img src="../img/imgThree.jpg" width="500" alt="人口特征变化图" title="1950年至2050年中国人口特征变化"></div>
+			</div></td><!--第一张图-->
+			<td>
+				<div class="special">
+			  <p> 
+人口老龄化进程正在加速发展。该人口特征趋势是儿童死亡率降低加上生育率下降所致。从1950到2015年间,中国每名妇女生育子女总数从6.11下降到1.66，总死亡率也在持续下降(从每万名人口22.2下降到7.2),这使得人口的期望寿命闻步提高(见图左)。在中国,出生时平均期望寿命已经从1950年的44.6岁上升到2015年的75.3岁，而在2050年将有望达到约80岁。</p></div><!--第一段文字-->
+				</td></tr>
+		  <tr><td>
+			<div class="img-group">
+			<div class="img-tip"><h5>中国年龄别粗自杀率（/10万）</h5></div>
+			<div class="img-2">	
+			<img src="../img/imgFour.jpg" width="500" alt="自杀率变化图" title="中国年龄别粗自杀率（/10万）"></div>
+			</div></td><!--第二张图-->
+			  <td>
+			<div class="special">
+			  <p> 
+根据2012年世卫组织的估计数字,中国的自杀率为8.7/10万( WH0,2014)。总体而言，自杀率随着年龄的增长而不断增加(见图左),70岁及以上男性的自杀率高于女性(55.8/10万 VS47.7/10万)。一项系统综述显示，60岁及以上老年人有自杀念头的流行率范围是13％－17％，不同研究结果之间稍有差异。而60岁及以上人群的年平均自杀率为23/10万。在中国,自杀趋势也随年龄而呈现出独特的人口统计学特征。最高年龄组(80岁以上)的自杀死亡的风险最高。而且，农村地区老年人的自杀率比城市要高得多。
+</p></div><!--第二段文字-->
+         </td>
+		</tr>
+		</table>
+<h3 id="bianhua">数量变化</h3>
+     <table>
+		  <tr><td>
+			<div class="img-group">
+			<div class="img-tip"><h5>2020-2050年中国老龄人口测算</h5></div>
+			<div class="img-1">	
+			<img src="../img/imgFive.png" width="500" alt="老龄人口变化图" title="2020-2050年中国老龄人口测算"></div>
+			</div></td><td><!--第三张图-->
+			<div class="special">
+			  <p> 
+预测2020年、2030年、2040年、2050年我国60岁及以上老年人口数量将分别达到2.55亿人、3.71亿人、4.37亿人和4.83亿人，80岁及以上老年人口数量将分别达到0.29亿人、0.43亿人、0.67亿人和1.08亿人。</p></div><!--第三段文字-->
+				</td></tr>
+			  <tr><td>
+			<div class="img-group">
+			<div class="img-tip"><h5>2020-2050年我国60岁以上老年人口数量及80岁以上老年人口数量</h5></div>
+			<div class="img-1">	
+			<img src="../img/imgSix.jpg" width="500" alt="两年龄段变化图" title="2020-2050年我国60岁以上老年人口数量及80岁以上老年人口数量"></div>
+			</div></td><!--第四张图-->
+		 <td><div class="special">
+			  <p> 
+人口预测结果显示，2020年。2030年、2040年、 2050年我国60岁及以上老年人口数量将分别达到2,55亿人、3.71亿人、4.37亿人、4.83亿人，80岁及以上老年人口数量将分别达到0.29亿人、0.43亿人0.67亿人和1.08亿人。2021年5月11日发布的第七次全国人口普查结果显示，我国60岁及以上人口为26402万人，占18.70%（其中，65岁及以上人口为19064万人，占13.50%）。与2010年相比，60岁及以上人口的比重上升5.44个百分点。数据表明，人口老龄化程度进一步加深，未来一段时期将持续面临人口长期均衡发展的压力。目前中国人口已经进入老年型。性别间的死亡差异使女性老年人成为老年人口中的绝大多数。预计到2040年，65岁及以上老年人口占总人口的比例将超过20%。同时，老年人口高龄化趋势日益明显：80岁及以上高龄老人正以每年5%的速度增加，到2040年将增加到7400多万人。
+</p></div><!--第四段文字-->
+				</td></tr>
+		  <tr><td>
+			<div class="img-group">
+			<div class="img-tip"><h5>2016-2020年中国空巢老人数量走势</h5></div>
+			<div class="img-1">	
+			<img src="../img/imgSeven.jpg" width="500" alt="空巢老人走势图" title="2016-2020年中国空巢老人数量走势"></div>
+			</div></td><!--第五张图-->
+			  <td>
+			<div class="special">
+			  <p> 
+2016年我国空巢老人超过1亿人，独居老人超过2000万人，空巢老年人口现象日益普遍。目前，中国空巢老年人口占老年总人口的一半。未来，空巢老年人口比例预计将突破70％，空巢老人与独居老人对精神慰藉的强烈需求催生了银发经济照料护理市场的诞生。老年人在一定程度上通过购买照料护理服务，缓解孤独感，解决陪伴的需求。</p></div><!--第五段文字-->
+				</td></tr>
+			  <tr><td>
+			<div class="img-group">
+			<div class="img-tip"><h5>2016-2020年中国独居老人数量走势</h5></div>
+			<div class="img-1">	
+			<img src="../img/imgEight.jpg" width="500" alt="独居老人走势图" title="2016-2020年中国独居老人数量走势"></div>
+			</div></td><!--第六张图-->
+				  <td>
+			<div class="special">
+			  <p> 
+独居老人和空巢老人增速加快，比重增高。随着我国城市化进程不断加快，家庭模式中传统三世同堂越来越少，越来越多的家庭趋于小型化，加之城市生活节奏的加快，年轻子女陪伴父母的时间变少，使得我国传统的家庭养老功能正在逐渐弱化。据最新调查显示2020年，独居老人和空巢老年人增加到1.18亿人左右，独居老人和空巢老人将成为老年人中的“主力军”。</p></div><!--第六段文字-->
+				</td></tr>
+				</table>
+	<h3 id="zhanbi">年龄占比变化</h3>
+	<table>
+			  <tr><td>
+			<div class="img-group">
+			<div class="img-tip"><h5>中国老龄人口年龄占比变化</h5></div>
+			<div class="img-1">	
+			<img src="../img/imgNine.jpg" width="500" alt="年龄占比变化图" title="中国老龄人口年龄占比变化"></div>
+			</div></td><!--第七张图-->
+				  <td>
+			<div class="special">
+			  <p> 
+2040年，0-20岁青少年人口占比低于20%，而65岁以上老年人占比将超过20%。根据预测，2020年0-20岁、21-35岁、36-50岁人口占比分别下降至22.9%、21.7%、22.7%，而51-65岁、66-75岁、75岁以上人口占比分别提升至20.4%、8.2%、4.1%。而到了2040年，65岁以上人口占23.5%，50岁以上人口占比超过4成，0-20岁、21-35岁、36-50岁人口占比分别下降至19.7%、17.0%、18.2%。中国老龄人口占比将持续提升。</p></div><!--第七段文字-->
+				</td></tr>
+			</table>
+		</div>
+		</main>
+	</div>
+			</div>
+			<div id="d3">
+			<h1 id="tanjiu">原因探究</h1>
+				<!--大框架-->
+		<div class="container">
+			<!--页眉-->
+			<main>
+				<!--菜单-->
+				<div class="partOne">
+					<!--大标题-->
+					<h1>
+						“&nbsp;老人安
+						<br>
+						<br>
+						&nbsp;&nbsp;&nbsp;天下安&nbsp;”
+					</h1>
+					<!--滚动-->
+					<marquee onMouseOver="this.stop()" onMouseOut="this.start()" direction="left" scrollamount="26">
+					<div ></div>
+					<!--菜单如下-->
+					<div class="menu">
+						<!--第一张图片-->	
+						<div class="menuImg">
+							<!--图片链接-->
+							<a href="#xianzhuang1" title="现状1">
+								<!--图片上的文字-->
+								<div class="menuP">
+									<p>
+										现 <br>
+										状 <br>
+									    一 <br>
+									</p>
+								</div>
+								<img src="../img/img_1.jpg" alt="图片一">
+							</a>
+						</div>
+						<!--第二张图片-->	
+						<div class="menuImg">
+							<!--图片链接-->
+							<a href="#xianzhuang2" title="现状2">
+								<!--图片文字-->
+								<div class="menuP">
+									<p>
+										现 <br>
+										状 <br>
+										二 <br>
+									</p>
+								</div>
+								<img src="../img/img_2.jpg" alt="图片二">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#xianzhuang3" title="现状3">
+								<div class="menuP">
+									<p>
+										现 <br>
+										状 <br>
+										三 <br>
+									</p>
+								</div>
+								<img src="../img/img_3.jpg" alt="图片三">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#xianzhuang4" title="现状4">
+								<div class="menuP">
+									<p>
+										现 <br>
+										状 <br>
+										四 <br>
+									</p>
+								</div>
+								<img src="../img/img_4.jpg" alt="图片四">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#yuanyin1" title="原因1">
+								<div class="menuP">
+									<p>
+										原 <br>
+										因 <br>
+										一 <br>
+									</p>
+								</div>
+								<img src="../img/img_5.jpg" alt="图片五">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#yuanyin2" title="原因2">
+								<div class="menuP">
+									<p>
+										原 <br>
+										因 <br>
+										二 <br>
+									</p>
+								</div>
+								<img src="../img/img_6.jpg" alt="图片六">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#yuanyin3" title="原因3">
+								<div class="menuP">
+									<p>
+										原 <br>
+										因 <br>
+										三 <br>
+									</p>
+								</div>
+								<img src="../img/img_7.jpg" alt="图片七">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#yuanyin4" title="原因4">
+								<div class="menuP">
+									<p>
+										原 <br>
+										因 <br>
+										四 <br>
+									</p>
+								</div>
+								<img src="../img/img_8.jpg" alt="图片八">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#yuanyin5" title="原因5">
+								<div class="menuP">
+									<p>
+										原 <br>
+										因 <br>
+										五 <br>
+									</p>
+								</div>
+								<img src="../img/img_9.jpg" alt="图片九">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#yuanyin_1" title="原因_1">
+								<div class="menuP">
+									<p>
+										原 <br>
+										因 <br>
+										(一) <br>
+									</p>
+								</div>
+								<img src="../img/img_10.jpg" alt="图片十">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#yuanyin_2" title="原因_2">
+								<div class="menuP">
+									<p>
+										原 <br>
+										因 <br>
+										(二) <br>
+									</p>
+								</div>
+								<img src="../img/img_11.jpg" alt="图片十一">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#yuanyin_3" title="原因_3">
+								<div class="menuP">
+									<p>
+										原 <br>
+										因 <br>
+										(三) <br>
+									</p>
+								</div>
+								<img src="../img/img_12.jpg" alt="图片十二">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#jianyi1" title="建议1">
+								<div class="menuP">
+									<p>
+										建 <br>
+										议 <br>
+										一 <br>
+									</p>
+								</div>
+								<img src="../img/img_13.jpg" alt="图片十三">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#jianyi2" title="建议2">
+								<div class="menuP">
+									<p>
+										建 <br>
+										议 <br>
+										二 <br>
+									</p>
+								</div>
+								<img src="../img/img_14.jpg" alt="图片十四">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#jianyi3" title="建议3">
+								<div class="menuP">
+									<p>
+										建 <br>
+										议 <br>
+										三 <br>
+									</p>
+								</div>
+								<img src="../img/img_15.jpg" alt="图片十五">
+							</a>
+						</div>
+						<div class="menuImg">
+							<a href="#jianyi4" title="建议4">
+								<div class="menuP">
+									<p>
+										建 <br>
+										议 <br>
+										四 <br>
+									</p>
+								</div>
+								<img src="../img/img_16.jpg" alt="图片十六">
+							</a>
+						</div>
+					</div>
+					</marquee>
+				</div>
+				
+				<!--空巢老人现状-->
+			<div id="d4">
+			<h1 id="xianzhuang">现状</h1>
+				<div class="partTwo">
+					<!--大标题-->
+					<h3>空巢老人现状</h3>
+					<!--小标题-->
+					<h5 id="xianzhuang1">现状一</h5>
+						<!--这部分内容框架-->
+						<div class="page">
+							<!--左图部分-->
+							<div class="pageLeft_1">
+								<!--左图-->
+								<div class="pageImg_1">
+									<!--图片文字-->
+									<a href="#top">
+									<div class="pageP_1">
+										<p>
+											冷月寒光寸断肠，每逢节假倍凄凉 <br>
+											轩窗紧闭图安静，卧室哀声总绕梁 <br>
+											
+										</p>
+									</div>
+									<!--图片链接-->
+									
+										<!--图片-->
+										<img src="../img/img_17.jpg" alt="图片十七">
+									</a>
+								</div>
+							</div>
+							<!--右文部分-->
+							<div class="pageRight_1">
+								<!--标题-->
+								<span>经济没有足够来源，生活拮据</span>
+								<!--文案-->
+								<p>
+									调查研究显示，65%的农村空巢老人没有收入，35%有经济收入。在有收入的空巢老人中，79.5%是依靠在家种植水稻或农副产品，而有16.5%的部分是依靠开小型商店，4%是依靠国家补助。他们的经济收入很低，月平均收入普遍低于500元。而没有经济来源的空巢老人的日常生活费用则全部来自子女的供养费用，而对于在外务工的子女而言，对在农村独自生活的老人的供养费用有73.6%低于每月500元；空巢老人自述积蓄状况的数据显示，13.6%有较多积蓄,32.7%表示有一些积蓄,53%表示没有积蓄;63.4%的空巢老人表示看病就医是家庭支出最大项,空巢老人的消费水平相对较低。就事实而言，很多空巢老人的饮食都不能满足身体营养需要，住所也十分简陋。
+								</p>
+							</div>
+						</div>
+					<!--小标题-->
+					<h5 id="xianzhuang2">现状二</h5>
+						<!--这部分内容框架-->
+						<div class="page">
+							<!--左文部分-->
+							<div class="pageLeft_1">
+								<!--图片框架-->
+								<div class="pageImg_1">
+									<!--图片文字-->
+									<a href="#top">
+									<div class="pageP_1">
+										<p>
+											喧笑隔墙偏入耳，烟花彻夜照空床 <br>
+											谁怜望子成龙苦，何日天伦共一堂 <br>
+											
+										</p>
+									</div>
+									<!--图片链接-->
+									
+										<img src="../img/img_18.jpg" alt="图片十八">
+									</a>
+								</div>
+							</div>
+							<!--右文部分-->
+							<div class="pageRight_1">
+								<!--标题-->
+								<span>日常生活难以自理，行动不便</span>
+								<!--文案-->
+								<p>
+									现在许多老人的生活得不到很好的照顾。比如，在哈尔滨市相关调查的农村空巢老人中，18.9%的空巢老人生活完全不能自理，42.8%的空巢老人生活能部分自理，生活能完全自理的只有39%。空巢老人的子女在外地务工或定居,当他们需要照料时,43.8%由老伴照顾,25.1%由孙子女照顾,20%由亲戚朋友和邻居来照顾,村委会照顾占4.6%,无人照顾的占5.9%,他们的日常照料较缺乏,因此,他们中曾经意外受伤的占42%,被偷、被抢、被骗的占19.6%,被打骂、受虐待的占9.8%。更严重的是,28.6%的空巢老人生病时无人发现,疾病看护严重缺失。
+								</p>
+							</div>
+						</div>
+					<h5 id="xianzhuang3">现状三</h5>
+						<div class="page">
+							<div class="pageLeft_1">
+								<div class="pageImg_1">
+									<a href="#top">
+									<div class="pageP_1">
+										<p>
+											已过山盘又水盘， 游灵飘荡海云端 <br>
+											高天小月真空落， 长夜春霜不胜寒 <br>
+											
+										</p>
+									</div>
+									
+										<img src="../img/img_19.jpg" alt="图片十九">
+									</a>
+								</div>
+							</div>
+							<div class="pageRight_1">
+								<span>身体健康状况不好，就医不便</span>
+								<p>
+									调查显示,多数农村空巢老人身体常被疾病困扰,44%的空巢老人患有一种慢性疾病,39.6%患有多种慢性疾病,无疾病的仅占15.7%。空巢老人所患慢性疾病主要是心脑血管病,29.9%患高血压,26.9%患冠心病,14.3%患有脑血管疾病。空巢老人们还普遍反映求医看病比较困难,从附近就医医院的医疗状况来看,68.3%的空巢老人认为附近医院的医疗设施一般,医术一般,21%认为医疗设施差,医术较差。从附近就医医院的收费来看:52.6%空巢老人认为收费较高,勉强能承受,22.8%表示收费过高,无力承受;从目前空巢老人医疗费用的主要来源来看,由子女承担的占35.2%,老人自己承担的占43.4%,亲戚承担的占4.9%,村集体承担的占5.9%,拥有医疗保险报销的占10.3%,空巢老人的医药费用常常面临困境。所以,基于以上原因,55.4%的空巢老人在生病时选择简单看看,吃点药,29%选择不去就医。
+								</p>
+							</div>
+						</div>
+					<h5 id="xianzhuang4">现状四</h5>
+						<div class="page">
+							<div class="pageLeft_1">
+								<div class="pageImg_1">
+									<a href="#top">
+									<div class="pageP_1">
+										<p>
+											老梦旧痕乌洞洞， 孤身莽雾路漫漫 <br>
+											遥闻隐约催魂曲， 切切叽叽对鬼弹 <br>
+											
+										</p>
+									</div>
+									
+										<img src="../img/img_20.jpg" alt="图片二十">
+									</a>
+								</div>
+							</div>
+							<div class="pageRight_1">
+								<span>心理孤独难受，终日难以释怀</span>
+								<p>
+									在经济负担、农活及家务负担、对教育孙辈的承受力方面,只有8.6%的老人认为很轻松,不成为负担,47.5%空巢老人认为难以承受,因此,这三方面的负担导致农村空巢老人精神压力大,表现在26.9%的老人常有压抑、焦虑、烦躁感,没有安全幸福、舒适满足感,幸福指数偏低。他们平时的娱乐方式主要集中在打牌、聊天,占所调查娱乐项目的60.6%,看电视、听广播的占23.1%,下棋、唱歌、听戏的占16.3%。另外,从农村空巢老人主观意愿上看,他们中经常参加村里组织的老年活动的仅占12.8%,而从不参加的高达36.9%,偶尔参加的占50.3%。所以,空巢老人的精神压力无处宣泄,导致他们心理缺乏安全感。从与子女沟通的频率上来看,只有26.4%的空巢老人与子女沟通频繁,有事才联系的占67.4%,基本不联系的占6.2%,与子女经常诉说苦恼和心事的仅占17.5%,所以,27.4%的空巢老人有孤独寂寞感,空巢老人的情感慰藉较贫乏。
+								</p>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div id="d5">
+			<h1 id="yuanyin">空巢老人原因</h1>
+				<!--空巢老人原因-->
+				<div class="partThree">
+					<!--大标题-->
+					<h3>空巢老人原因探究</h3>
+					<!--小标题-->
+					<h5 id="yuanyin1">原因一</h5>
+						<!--这部分框架-->
+						<div class="page">
+							<!--左文部分-->
+							<div class="pageLeft_2">
+								<!--标题-->
+								<span>外出打工</span>
+								<!--文案-->
+								<p>
+									子女外出打工是全县农村空巢老人形成的最重要的原因。自改革开放以来，我国经济高速发展,诞生了一批特殊的人群，那就是农民工。<br>
+
+&nbsp;&nbsp;这些农民工主要是以中西部为主，在改革开放的初期，中西部地区经济发展比较落后，而东部地区通过改革开放吸收了大量的外资进行投资，所以经济发展比较迅猛，需要大量的劳动力人口，这时候大量中西部地区的闲置劳动力就纷纷到东部找工作，从而形成了大规模的人口流动。<br>
+
+&nbsp;&nbsp;直到今天，我国仍然有大批的农民工在东部地区或者一些发达城市工作，所以目前很多省份仍然有很大一部分居民都是到省外打工的。<br>
+
+&nbsp;&nbsp;根据最新的数据统计，截止2019年我国总共有29007万农民工，这个数量相较于2018年增加了170万左右。而在这2.2亿农民工当中，外出的农民工数量达到了17425万人，这个数量还是非常庞大的。<br>
+								</p>
+							</div>
+							<!--右图部分-->
+							<div class="pageRight_2">
+								<!--图片框架-->
+								<div class="pageImg_2">
+									<!--图片文字-->
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											梯田如带绕山间，拴住农夫不得闲 <br>
+											手握锄镰头点地，肩扛日月汗生烟 <br>
+											
+										</p>
+									</div>
+									<!--图片链接-->
+									
+										<img src="../img/img_21.jpg" alt="图片二十一">
+									</a>
+								</div>
+							</div>
+						</div>
+					<!--小标题-->
+					<h5 id="yuanyin2">原因二</h5>
+						<!--这部分框架-->
+						<div class="page">
+							<!--左文部分-->
+							<div class="pageLeft_2">
+								<!--标题-->
+								<span>自然空巢</span>
+								<!--文案-->
+								<p>
+									所谓自然空巢，就是有的老人终身未婚，有的老人虽已结婚，但未生育子女，有的生有子女，但子女已经去世，有的只一个女儿，女儿一旦出嫁之后，就是别人家的人了，回家照顾老人就有次数了，老人就成了空巢户。
+								</p>
+							</div>
+							<!--右图部分-->
+							<div class="pageRight_2">
+								<!--图片框架-->
+								<div class="pageImg_2">
+									<!--图片文字-->
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											一生未做调资梦，八辈无关晋级缘 <br>
+											但喜今朝免农税，老来医保少花钱 <br>
+											
+										</p>
+									</div>
+									<!--图片链接-->
+									
+										<img src="../img/img_22.jpg" alt="图片二十二">
+									</a>
+								</div>
+							</div>
+						</div>
+					<h5 id="yuanyin3">原因三</h5>
+						<div class="page">
+							<div class="pageLeft_2">
+								<span>代际差异</span>
+								<p>
+									当物质生活水平提高后，老少两代人对独立的活动空间和自由的要求会越来越强烈，传统的大家庭居住方式已经不适应人们的这种需求，小家庭被普遍接受。一旦子女成立了小家庭或进入城市，农村的父母一般都不会与子女生活在一起，而是选择独自居住或留在农村老家。当然，农村老年型“空巢”家庭的产生也还有其他一些因素，例如儿子在外打工、婆媳、公媳关系的沟通缺少联系的中介和桥梁，家庭不和、矛盾增多，迫使老人同儿媳和孙子分开住，子女赡养老人的观念淡薄、嫌弃老人，从而使老人不得不独守“空巢”等等。
+								</p>
+							</div>
+							<div class="pageRight_2">
+								<div class="pageImg_2">
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											可怜留守白头人，怕误农情怕误春 <br>
+											瓜果地头才淌汗，棉粮田里又躬身 <br>
+											
+										</p>
+									</div>
+									
+										<img src="../img/img_23.jpg" alt="图片二十三">
+									</a>
+								</div>
+							</div>
+						</div>
+						
+					<h5 id="yuanyin4">原因四</h5>
+						<div class="page">
+							<div class="pageLeft_2">
+								<span>生活方式改变</span>
+								<p>
+									首先,我国实施的计划生育政策,要求每一对夫妇只能生育一个孩子。
+								</p>
+								<p>
+									第二,社会竞争压力越来越大,丁克家庭（double income no kids）,即不要孩子的家庭观念越来越流行。
+								</p>
+								<p>
+									第三,现在竞争对人的要求越来越高,人员的流动越来越频繁,人们经常要从一个城市到另一个城市,甚至出国深造、工作等。
+								</p>
+							</div>
+							<div class="pageRight_2">
+								<div class="pageImg_2">
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											无门可串孙添堵，有病难医媳较真 <br>
+											但守空巢谁过问？惠民新政比儿亲 <br>
+											
+										</p>
+									</div>
+									
+										<img src="../img/img_24.jpg" alt="图片二十四">
+									</a>
+								</div>
+							</div>
+						</div>
+						
+					<h5 id="yuanyin5">原因五</h5>
+						<div class="page">
+							<div class="pageLeft_2">
+								<span>思想观念改变</span>
+								<p>
+									首先，个人在思想观念上的转变。改革开放后，代际分居成了一种新趋势，这客观上促成了城市空巢家庭的增多。
+								</p>
+								<p>
+									其次，家庭在结构上的变化及代际间的差异。小家庭的居住方式被普遍接受，有的老人看着子女们忙于学习、工作，选择独立生活来减轻子女的负担。
+								</p>
+								<p>
+									最后，社会在转型中所引发的社会变迁。 日渐增多的子女到外地甚至到国外求学或工作，这就使得不少家庭只剩下老一代人故土难迁。
+								</p>
+							</div>
+							<div class="pageRight_2">
+								<div class="pageImg_2">
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											倚门守望月盈亏，玉漏声声计断炊 <br>
+											壶里乾坤空落落，烛边岁月去迟迟 <br>
+											
+										</p>
+									</div>
+									
+										<img src="../img/img_25.jpg" alt="图片二十五">
+									</a>
+								</div>
+							</div>
+						</div>	
+				</div>
+				<!--老龄化原因-->
+				<div class="partFour">
+					<!--大标题-->
+					<h3 id="laolinghua">人口老龄化</h3>
+					<!--小标题-->
+					<h5 id="yuanyin_1">原因(一)</h5>
+						<!--这部分框架-->
+						<div class="page">
+							<!--左图部分-->
+							<div class="pageLeft_1">
+								<!--左图-->
+								<div class="pageImg_1">
+									<!--图片文字-->
+									<a href="#top">
+									<div class="pageP_1">
+										<p>
+											听燃爆竹痴心震，看换桃符泪眼垂 <br>
+											徒羡邻家欢酒宴，逢人却硬展颦眉 <br>
+										</p>
+									</div>
+									<!--图片链接-->
+									
+										<img src="../img/img_26.jpg" alt="图片二十六">
+									</a>
+								</div>
+							</div>
+							<!--右文部分-->
+							<div class="pageRight_1">
+								<!--标题-->
+								<span>死亡率降低，平均预期寿命增加</span>
+								<!--文案-->
+								<p>
+									建国后消除了战争对人口死亡的影响。政府采取措施减少或根除了饥荒、疾病、溺婴、社会剥削等因素，基本上控制造成人口大批死亡的霍乱、天花、疟疾，还着手完善和提高了医疗、卫生设施和保健服务水平。人口的平均预期寿命从1949年的35岁，提高到1990年的69.82岁。人口平均出生率从20世纪50年代的42.2%下降到20世纪80年代的13.9%，1998年下降到9.72%。2000年以来进一步下降到9.0%以下，自然增长率更降至5.0%左右。
+								</p>
+							</div>
+						</div>
+					<!--小标题-->
+					<h5 id="yuanyin_2">原因(二)</h5>
+						<!--这部分框架-->
+						<div class="page">
+							<!--左图部分-->
+							<div class="pageLeft_1">
+								<!--图片框架-->
+								<div class="pageImg_1">
+									<!--图片文字-->
+									<a href="#top">
+									<div class="pageP_1">
+										<p>
+											子媳南飞若许年，空巢翁妪对愁眠 <br>
+											肩扛日月三更起，夜忆儿孙一梦牵 <br>
+										</p>
+									</div>
+									<!--图片链接-->
+									
+										<img src="../img/img_27.jpg" alt="图片二十七">
+									</a>
+								</div>
+							</div>
+							<!--右文部分-->
+							<div class="pageRight_1">
+								<!--标题-->
+								<span>生育率的影响</span>
+								<!--文案-->
+								<p>
+									我国长期以来实行计划生育政策，从而出现较低生育率。为了控制人口过快增长，减轻人口对经济社会发展造成的压力，自上个世纪80年代开始我国实行计划生育的基本国策,由此大大降低了全社会的生育水平。但是在建国初期和20世纪50年代，结婚生育出现高潮，比如哈尔滨市人口出生率处于40%以上的高水平，死亡率在10%以下，自然增长率保持在30%以上的高水平。当时每对夫妇平均生育子女数一度超过七个，这些人口群体绝大部分在20世纪90年代步入老龄人口行列，从而增加了老年人口比例。年轻人口比重的进一步降低和老年人口比重相对的提高，人口老龄化速度加快，空巢老人逐渐增多。
+								</p>
+							</div>
+						</div>
+					<h5 id="yuanyin_3">原因(三)</h5>
+						<div class="page">
+							<div class="pageLeft_1">
+								<div class="pageImg_1">
+									<a href="#top">
+									<div class="pageP_1">
+										<p>
+											缺月难圆心作痛，孤身易老泪潸然 <br>
+											衣单褥薄谁知晓，命赴黄泉哪个怜 <br>
+										</p>
+									</div>
+									
+										<img src="../img/img_28.jpg" alt="图片二十八">
+									</a>
+								</div>
+							</div>
+							<div class="pageRight_1">
+								<span>经济与医疗的影响</span>
+								<p>
+									育儿费用提高、生产生活节奏的加快、生活压力加大，造成生育率不断下降，出现众多丁克族。此外，随着经济的快速增长、科学技术的进步,人民医疗条件的改善和生活水平的提高,使人类在健康和长寿方面已取得了惊人的成就,从而使得人口寿命大大延长。
+								</p>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div id="d6">
+			<h1 id="fansi">反思</h1>
+			
+				<!--关爱空巢老人的工作建议-->
+				<div class="partFive">
+					<h3 id="jianyi">关爱空巢老人的工作建议</h3>
+					<h5 id="jianyi1">建议一</h5>
+						<div class="page">
+							<div class="pageLeft_2">
+								<span>大力宣传</span>
+								<p>
+									加强宣传力度，营造敬老爱老氛围。
+								</p>
+								<p>
+									大力宣传《中华人民共和国老年人权益保障法》切实维护空巢老人的合法权益，使国家尊老爱老政策深入人心，营造关爱空巢老人的社会氛围，提高后辈关爱空巢老人的主动性和责任性。各地区的空巢老人所属的社区居委会要进一步提升服务质量，要让社区养老服务工作更加贴近百姓，贴近空巢老人，让他们开开心心安度晚年。
+								</p>
+							</div>
+							<div class="pageRight_2">
+								<div class="pageImg_2">
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											陋居素少闻喧笑，双出双回挽臂亲 <br>
+											每赏京昆驱寂寞，时观鸟卉养精神 <br>
+										</p>
+									</div>
+									
+										<img src="../img/img_29.jpg" alt="图片二十九">
+									</a>
+								</div>
+							</div>
+						</div>
+					<h5 id="jianyi2">建议二</h5>
+						<div class="page">
+							<div class="pageLeft_2">
+								<span>实质建设</span>
+								<p>
+									依靠各自然村自身的力量，作出实质性工作建设。
+								</p>
+								<p>
+									一方面，各地可以村为单位建立老年人活动中心，为空巢老人提供良好的生活与娱乐环境，既有利于老人的身体健康，而且可以让老人找到属于自己的生活，有一种归属感，重新找到生活的乐趣。另一方面，可以以一个或者多个自然村为单位建立队伍，在生活上给空巢老人以全面充足的照顾，让他们的生活各个方面都得到关照，也给他们的生活提供了保障，让空巢老人从生活上减轻负担。
+								</p>
+							</div>
+							<div class="pageRight_2">
+								<div class="pageImg_2">
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											夜长乐忆娇儿事，昼短忧思垂老身 <br>
+											最盼电波千里讯，如禾得雨沫阳春 <br>
+										</p>
+									</div>
+									
+										<img src="../img/img_30.jpg" alt="图片三十">
+									</a>
+								</div>
+							</div>
+						</div>
+					<h5 id="jianyi3">建议三</h5>
+						<div class="page">
+							<div class="pageLeft_2">
+								<span>建立社区</span>
+								<p>
+									以乡镇为单位，建立养老社区。
+								</p>
+								<p>
+									对于一些生活有条件和有重病在身的空巢老人，政府可以提供更优越的环境供其生活，建立养老社区，以给这些老人养好身体，享受到快乐的晚年。
+								</p>
+							</div>
+							<div class="pageRight_2">
+								<div class="pageImg_2">
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											搴帷拜母河梁去，白发愁看泪眼枯 <br>
+											惨惨柴门风雪夜，此时有子不如无 <br>
+										</p>
+									</div>
+									
+										<img src="../img/img_31.jpg" alt="图片三十一">
+									</a>
+								</div>
+							</div>
+						</div>
+					<h5 id="jianyi4">建议四</h5>
+						<div class="page">
+							<div class="pageLeft_2">
+								<span>提高质量</span>
+								<p>
+									要加强组织领导，提高养老服务质量。
+								</p>
+								<p>
+									各级党政部门，尤其是老龄工作部门，要引导社区建立老龄工作领导小组，把关心空巢老人生活作为重要服务内容。要进一步鼓励社会各界参与实施规范管理，切实加强社会调查，妥善解决社会从事养老服务所存在的人力、物力和财力的难点问题。要充分发挥养老服务专业培训，努力为空巢老人服务，维护他们的权益。
+								</p>
+							</div>
+							<div class="pageRight_2">
+								<div class="pageImg_2">
+									<a href="#top">
+									<div class="pageP_2">
+										<p>
+											空巢常醉杯中酒，夜静寒风舞冻柳 <br>
+											一盏一杯复一瓶，亲情总让离情负 <br>
+										</p>
+									</div>
+									
+										<img src="../img/img_32.jpg" alt="图片三十二">
+									</a>
+								</div>
+							</div>
+						</div>
+				</div>
+				</div>
+			</main>
+			<footer>
+				<div class="partSix">
+					<div class="footerDiv">
+						<p>&nbsp;<br></p>
+						<p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p>
+						<p class="footerP">
+							关于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</p>
+						<p class="footerP">
+							分享&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</p>
+						<p class="footerP">
+							联系&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</p>
+						<p class="footerP">
+							版权&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</p>
+					</div>
+					<div class="footerP_1">
+						<p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p>
+						<p>
+							Copyright&copy;&nbsp;2021-forever The three five team all rights reserved  
+						</p>
+					</div>
+					<div class="footerP_1">
+						<p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p>
+						<p>
+							Nanchong|&nbsp;&nbsp;Sichuan|&nbsp;&nbsp;China
+						</p>
+					</div>
+					<div class="footerP_1">
+						<p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p><p>&nbsp;<br></p>
+						<p>
+							Development and design of the three five team
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+			</div>
+		
+	</body>
+</html>

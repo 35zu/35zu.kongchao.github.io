@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-image:url("../img/bottom.jpg");background-size: 100% 100%;background-attachment: fixed;
+		display: flex;justify-content: center;align-items: center;height:auto;background-color: #000;}
+        .paper-flip {
+          position: relative;
+          width: 500px;
+          height: 300px;
+          margin: 0 auto;
+        }
+        .image-layer {
+          width: 450px;
+          height: 300px;
+          overflow: hidden;
+          position: absolute;
+          top: 340px;
+          left: 250px;}/*对大底图的设定*/
+        .image-layer img {
+          width: 500px;
+          cursor: pointer;
+        }
+        .image-layer:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-style: solid;
+          border-width: 0;
+          border-top-color: #fff ;
+          border-right-color: #fff;
+          border-bottom-color:rgba(0,0,0,0.5);    
+          border-left-color:rgba(0,0,0,0.5);
+          border-radius: 0 0 0 4px;
+          box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+          transition:all 0.4s ease-out;
+        }
+
+        .image-layer:hover:before{
+          border-left-width:900px;
+          border-top-width:700px;border-radius: 30%;
+        }/*翻页大小设定*/
+		.image-p{width: 100px; height: 100px; display: none; position: absolute; margin-left: 170px; margin-top: 80px;}
+		.image-layer:hover .image-p{display: block; cursor:pointer; transform: scale(1.5);}
+      ul {
+        position: relative;
+        display: flex;
+        height: 200px;
+      }
+      ul::after {
+        content: "关爱空巢老人";
+        position: absolute;
+        top: 520px;
+        left: 55%;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        transform: translate(-50%, -700%);
+      }/*对字的设置*/
+      li {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin: 77px 10px;
+      }/*对爱心位置的设置*/
+      li:nth-child(1) {
+        background-color: #525558;
+        animation: love1 5s 0s infinite;
+      }
+      li:nth-child(2) {
+        background-color: #6E5B5E;
+        animation: love2 5s 0.2s infinite;
+      }
+      li:nth-child(3) {
+        background-color: #8B91AB;
+        animation: love3 5s 0.4s infinite;
+      }
+      li:nth-child(4) {
+        background-color: #D6B5AB;
+        animation: love4 5s 0.6s infinite;
+      }
+      li:nth-child(5) {
+        background-color: #F2F1EF;
+        animation: love5 5s 0.8s infinite;
+      }
+      li:nth-child(6) {
+        background-color: #D6B5AB;
+        animation: love4 5s 1s infinite;
+      }
+
+      li:nth-child(7) {
+        background-color: #8B91AB;
+        animation: love3 5s 1.2s infinite;
+      }
+
+      li:nth-child(8) {
+        background-color: #6E5B5E;
+        animation: love2 5s 1.4s infinite;
+      }
+
+      li:nth-child(9) {
+        background-color: #525558;
+        animation: love1 5s 1.6s infinite;
+      }
+      /* 下面定义动画 */
+      @keyframes love1 {
+        30%,
+        50% {
+          height: 60px;
+          transform: translateY(-30px);
+        }
+        70%,
+        100% {
+          height: 20px;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes love2 {
+        30%,
+        50% {
+          height: 125px;
+          transform: translateY(-60px);
+        }
+
+        70%,
+        100% {
+          height: 20px;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes love3 {
+        30%,
+        50% {
+          height: 160px;
+          transform: translateY(-75px);
+        }
+
+        70%,
+        100% {
+          height: 20px;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes love4 {
+        30%,
+        50% {
+          height: 180px;
+          transform: translateY(-60px);
+        }
+
+        70%,
+        100% {
+          height: 20px;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes love5 {30%,50% {height: 200px;
+          transform: translateY(-45px);}
+        70%,
+        100% {
+          height: 20px;
+          transform: translateY(0);}}
+		a{text-decoration-line: none;color: #000000;text-indent: 2em;
+						font-size:36px; letter-spacing: 0.5px;
+						line-height: 1;text-align: left;font-family: YouYuan;}
+		.heart{top:300px}
